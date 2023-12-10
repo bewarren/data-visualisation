@@ -16,7 +16,7 @@ const map_data_numeric = map_data.map((feature) => ({
 
 const geojson: FeatureCollection = {
   type: "FeatureCollection",
-  features: map_data_numeric,
+  features: map_data_numeric as any,
 };
 
 const layerStyle: CircleLayer = {
