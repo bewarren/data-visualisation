@@ -81,7 +81,7 @@ const Charts = () => {
       <BarChart
         width={1200}
         height={600}
-        data={data.slice(-value, -1)}
+        data={data.slice(0, value)}
         margin={{
           top: 5,
           right: 30,
