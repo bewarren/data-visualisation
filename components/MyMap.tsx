@@ -4,7 +4,7 @@ import React, { useCallback, useState } from "react";
 import Map, { Source, Layer } from "react-map-gl";
 import type { CircleLayer } from "react-map-gl";
 import type { FeatureCollection } from "geojson";
-import { map_data } from "./map_data";
+import { map_data } from "../data/map_data";
 
 const map_data_numeric = map_data.map((feature) => ({
   ...feature,

@@ -12,7 +12,7 @@ import {
   Legend,
   ResponsiveContainer,
 } from "recharts";
-import { data } from "./data";
+import { data } from "../data/data";
 import { Slider, Typography, styled } from "@mui/material";
 
 const CustomSlider = styled(Slider)({
