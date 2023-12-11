@@ -36,11 +36,14 @@ import {
   clusterLayer,
   unclusteredPointLayer,
 } from "./layers";
+import { Typography } from "@mui/material";
 
 const MyMap = () => {
   return (
     <div className="w-full h-full p-20 items-center">
-      {" "}
+      <Typography variant="h3" gutterBottom sx={{ marginBottom: 10 }}>
+        Map View
+      </Typography>
       <Map
         mapboxAccessToken="pk.eyJ1IjoiYmVud2FycmVuNTAyMCIsImEiOiJjbHB6a3UwZnIxNnJkMnJvOGdsZGs5NHhuIn0.3qwtXDd3nNi7oZciqao-ZA"
         initialViewState={{
@@ -48,7 +51,7 @@ const MyMap = () => {
           latitude: -34.02451176651568,
           zoom: 8,
         }}
-        style={{ width: 900, height: 600 }}
+        style={{ width: 1100, height: 800 }}
         mapStyle="mapbox://styles/mapbox/streets-v9"
       >
         <Source
